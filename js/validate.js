@@ -9,13 +9,8 @@ function validate(event) {
   var elem2 = document.getElementById("long");
   var txt = elem.value;
   var txt2 = elem2.value;
+
   
-
-
-   
-  // (lat > -90 && lat < 90 && lng > -180 && lng < 180) {
-    
-
     if(txt > -90 && txt < 90){
 
       if(txt2 > -180 && txt2 < 180 ){
