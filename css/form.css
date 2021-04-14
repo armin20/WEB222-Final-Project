@@ -1,3 +1,9 @@
+/* Name: Armin Sharifiyan
+ ID: 130891203 
+*/
+
+
+
 /**
  * Styles for the add-observation.html page 
  */
@@ -11,7 +17,6 @@
     color: red;
 }
 
-
 #message2{
 
     color: red;
@@ -21,7 +26,6 @@
     width: 508px;
 
 }
-
 #note{
     width: 526px;
 }

@@ -1,3 +1,8 @@
+/* Name: Armin Sharifiyan
+   ID: 130891203
+*/
+
+
 /* Header */
 #hero {
   width: 100%;
@@ -123,16 +128,19 @@ footer {
  */
 
  #Button{
+   width: 142px;
    display: flex;
    flex-wrap: wrap;
    flex-direction: row;
    
  }
+
  #search{
+
    display: flex;
    
  }
+
  #inputsearch{
    width: 700px;
  }
-
