@@ -5,8 +5,6 @@
 
 
 
-
-
 // Add the text to the <span>...<span> element in the element with id=observation-title
 function updateTitle(text) {
   const title = document.querySelector("#observation-title > span");
@@ -32,7 +30,7 @@ function createAnchor(href, innerContent) {
 }
 
 function cardImg(url) {
-  url = url.replace('square', 'medium');
+  url = url.replace("square", "medium");
   const div = document.createElement("div");
   div.className = "card-img";
   div.style = `background-image: url(${url})`;
@@ -40,9 +38,9 @@ function cardImg(url) {
   return div;
 }
 
-function cardBody(name, date, uri, wikipediaUrl,) {
+function cardBody(name, date, uri, wikipediaUrl) {
   const body = document.createElement("div");
-  body.className="card-body";
+  body.className = "card-body";
 
   const nameAnchor = createAnchor(wikipediaUrl, name);
   const h3 = document.createElement("h3");
@@ -64,26 +62,26 @@ function cardIcons(isNative, isIntroduced, isThreatened, isEndangered) {
   function cardIcon(classes, title) {
     const icon = document.createElement("i");
     icon.className = classes;
-    icon.title = title
+    icon.title = title;
     return icon;
   }
 
-  if(isNative) {
+  if (isNative) {
     // <i class="fas fa-leaf" title="Native"></i>
     icons.appendChild(cardIcon("fas fa-leaf", "Native"));
   }
 
-  if(isIntroduced) {
+  if (isIntroduced) {
     // <i class="fas fa-frog" title="Introduced"></i>
     icons.appendChild(cardIcon("fas fa-frog", "Introduced"));
   }
 
-  if(isThreatened) {
+  if (isThreatened) {
     // <i class="fas fa-radiation-alt" title="Threatened"></i>
     icons.appendChild(cardIcon("fas fa-radiation-alt", "Threatened"));
   }
 
-  if(isEndangered) {
+  if (isEndangered) {
     // <i class="fas fa-skull-crossbones" title="Endangered">
     icons.appendChild(cardIcon("fas fa-skull-crossbones", "Endangered"));
   }
@@ -93,7 +91,16 @@ function cardIcons(isNative, isIntroduced, isThreatened, isEndangered) {
 
 function buildCardForObservation(observation) {
   const {
-    id, name, photoUrl, date, uri, wikipediaUrl, isNative, isEndangered, isIntroduced, isThreatened
+    id,
+    name,
+    photoUrl,
+    date,
+    uri,
+    wikipediaUrl,
+    isNative,
+    isEndangered,
+    isIntroduced,
+    isThreatened,
   } = observation;
 
   const card = document.createElement("div");
@@ -102,16 +109,15 @@ function buildCardForObservation(observation) {
 
   card.appendChild(cardImg(photoUrl));
   card.appendChild(cardBody(name, date, uri, wikipediaUrl));
-  card.appendChild(cardIcons(isNative, isIntroduced, isThreatened, isEndangered));
+  card.appendChild(
+    cardIcons(isNative, isIntroduced, isThreatened, isEndangered)
+  );
 
   return card;
 }
 
 function toggleLoading(isLoading) {
-
-  
-  if(isLoading == true){
-    
+  if (isLoading == true) {
     var button = document.getElementById("Button");
     button.innerHTML = "";
 
@@ -119,12 +125,10 @@ function toggleLoading(isLoading) {
     var n_text = document.createTextNode("Loading...");
 
     type.setAttribute("class", "fas fa-hourglass-half");
-     type.appendChild(n_text);
+    type.appendChild(n_text);
     button.appendChild(type);
     button.disabled = true;
-  }
-  else if(isLoading == false){
-    
+  } else if (isLoading == false) {
     var b = document.getElementById("Button");
     b.innerHTML = "";
     var searchicon = document.createElement("i");
@@ -135,13 +139,11 @@ function toggleLoading(isLoading) {
     b.disabled = false;
   }
 
-
-
-  // TODO - toggle the state of the Search button. When we click 'Search' we need to 
+  // TODO - toggle the state of the Search button. When we click 'Search' we need to
   // indicate to the user that we're doing something (i.e., that we're Loading...).
   // We also need to change the icon from a search magnifying glass to an hourglass.
   // Finally, we need to disable the button, so the user doesn't click it multiple
   // times (i.e., we need to wait until the loading finishes).  We decide what to
   // do based on the value of the isLoading argument.
-   console.log('TODO - Toggleloading');
+  console.log("TODO - Toggleloading");
 }

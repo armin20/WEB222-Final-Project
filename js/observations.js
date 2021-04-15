@@ -4,6 +4,7 @@
 
 
 
+
 // An iNaturalist observation Object contains a tremendous amount of data, much of
 // it not useful in our current program. We need to transform these Observation
 // objects into a new format that matches our needs.
