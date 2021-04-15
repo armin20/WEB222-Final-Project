@@ -3,61 +3,39 @@
 
 
 function validate(event) {
-
-  
+ 
   var elem = document.getElementById("lat");
   var elem2 = document.getElementById("long");
   var txt = elem.value;
   var txt2 = elem2.value;
 
-  
     if(txt > -90 && txt < 90){
 
       if(txt2 > -180 && txt2 < 180 ){
 
         return true;
       }
-
-      else{
+        else{
             document.getElementById("message2").innerHTML = "* must be a valid Longitude (-180 to 180)";
             document.getElementById("message").innerHTML = "*";
-            // var  longtitude_error = document.getElementById("message2").innerHTML = "";
-            // var texterror = document.createTextNode("must be a valid Longtitude (-180 to 180)");
-            // longtitude_error.appendChild(texterror);
-
-            // newtext.innerHTML = "";
-            // var texterror = document.createTextNode("must be a valid Longtitude (-180 to 180)");
-            // newtext.appendChild(texterror);
-            // longtitude_error.appendChild(newtext);
-      
             return false;
-      }
-
+        }
     }
-
     else{
-    
-
       document.getElementById("message").innerHTML = "* must be a valid Latitude (-90 to 90)";
-      // var teerror = document.createTextNode(" must be a valid Latitude (-90 to 90)");
-      // a.appendChild(teerror);
 
       if(txt2 < -180 || txt2 > 180 ){
-      document.getElementById("message2").innerHTML = "* must be a valid Longitude (-180 to 180)";
 
-        //  longtitude_error = document.getElementById("message2").innerHTML = "";
-        //   var texterror = document.createTextNode("must be a valid Longtitude (-180 to 180)");
-        //   longtitude_error.appendChild(texterror);
+        document.getElementById("message2").innerHTML = "* must be a valid Longitude (-180 to 180)";
       }
+
       else{
+    
         document.getElementById("message2").innerHTML = "*";
       }
-
       return false;
     }
 
-  
-  
   // TODO - write custom validation logic to validate the longitude and latitude
   // values. The latitude value must be a number between -90 and 90; the
   // longitude value must be a number between -180 and 180. If either/both are

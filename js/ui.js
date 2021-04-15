@@ -115,8 +115,6 @@ function toggleLoading(isLoading) {
     var button = document.getElementById("Button");
     button.innerHTML = "";
 
-    // button.parentNode.removeChild();
-    
     var type = document.createElement("i");
     var n_text = document.createTextNode("Loading...");
 
@@ -145,5 +143,5 @@ function toggleLoading(isLoading) {
   // Finally, we need to disable the button, so the user doesn't click it multiple
   // times (i.e., we need to wait until the loading finishes).  We decide what to
   // do based on the value of the isLoading argument.
-  console.log('TODO - ToggleLoading');
+   console.log('TODO - Toggleloading');
 }
