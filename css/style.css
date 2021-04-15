@@ -3,6 +3,8 @@
 */
 
 
+
+
 /* Header */
 #hero {
   width: 100%;
@@ -72,7 +74,8 @@ time {
   padding: 0;
   margin-bottom: 25px;
   border-radius: 4px;
-  box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 1px 3px 0px rgba(0,0,0,0.12);
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
 
 .card-img {
@@ -111,7 +114,7 @@ time {
   padding: 0 15px;
   padding-top: 0;
   text-align: right;
-} 
+}
 
 .card-icons > i {
   margin: 5px;
@@ -127,20 +130,17 @@ footer {
  * TODO: style the Search Form
  */
 
- #Button{
-   width: 142px;
-   display: flex;
-   flex-wrap: wrap;
-   flex-direction: row;
-   
- }
+#Button {
+  width: 142px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
 
- #search{
+#search {
+  display: flex;
+}
 
-   display: flex;
-   
- }
-
- #inputsearch{
-   width: 700px;
- }
+#inputsearch {
+  width: 700px;
+}

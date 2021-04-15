@@ -4,32 +4,32 @@
 
 
 
+
 /**
  * Styles for the add-observation.html page 
  */
 
-
- .required{
-     color: red;
- }
-
-#message{
-    color: red;
+.required {
+  color: red;
 }
 
-#message2{
-
-    color: red;
+#message {
+  color: red;
 }
 
-#description, #photographer, #photographer_id{
-    width: 508px;
-
-}
-#note{
-    width: 526px;
+#message2 {
+  color: red;
 }
 
-#license{
-    width: 526px;
+#description,
+#photographer,
+#photographer_id {
+  width: 508px;
+}
+#note {
+  width: 526px;
+}
+
+#license {
+  width: 526px;
 }
