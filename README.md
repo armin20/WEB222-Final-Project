@@ -1,9 +1,11 @@
 # WEB222-Final-Assessment
 
 
-This is the final project source code for web programming.
+This is the final project source code for web programming course.
 
-All the code uploaded to this repository for making the site online.
+Wild life web pplication with search bar and form.
 
+The form has custom validation with JavaScript.
+
+Updates:
 Some comments deleted.
-
